@@ -1,5 +1,3 @@
-console.log('Client side javascript')
-
 const getForecast = (address,callback) => fetch(`http://localhost:3000/weather?address=${address}`)
 .then((response) => {
     response.json().then((data) => {
