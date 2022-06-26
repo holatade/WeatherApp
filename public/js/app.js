@@ -1,4 +1,4 @@
-const getForecast = (address,callback) => fetch(`http://localhost:3000/weather?address=${address}`)
+const getForecast = (address,callback) => fetch(`/weather?address=${address}`)
 .then((response) => {
     response.json().then((data) => {
         callback(data);
